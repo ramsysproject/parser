@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.Map;
 
 @Component
 public class EntryServiceImpl implements EntryService {
@@ -24,5 +26,10 @@ public class EntryServiceImpl implements EntryService {
         session.close();
 
         return id;
+    }
+
+    @Override
+    public Map<Integer, String> findRequestsQuantityByIp(Date startDate, Date endingDate) {
+        return null;
     }
 }

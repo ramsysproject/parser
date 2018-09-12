@@ -5,18 +5,19 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class Entry {
 
     private Long id;
-    private String date;
+    private Date date;
     private String ipAddress;
     private String request;
     private Integer status;
     private String userAgent;
 
-    public Entry(String date, String ipAddress, String request, Integer status, String userAgent) {
+    public Entry(Date date, String ipAddress, String request, Integer status, String userAgent) {
         this.date = date;
         this.ipAddress = ipAddress;
         this.request = request;
@@ -35,11 +36,11 @@ public class Entry {
         this.id = id;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -88,13 +89,13 @@ public class Entry {
     }
 
     public static class Builder {
-        private String date;
+        private Date date;
         private String ipAddress;
         private String request;
         private Integer status;
         private String userAgent;
 
-        public Builder date(String date){
+        public Builder date(Date date){
             this.date = date;
             return this;
         }
