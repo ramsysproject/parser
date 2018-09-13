@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="225bed74-b23c-4282-b55a-61012f7cd9bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/model/Restriction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/service/RestrictionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ef/service/impl/RestrictionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/parser-1.0.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-1.0.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/parser-1.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-1.0.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/parser-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/parser-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/processor/ProcessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/processor/ProcessorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="225bed74-b23c-4282-b55a-61012f7cd9bb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -55,7 +40,7 @@
     <session id="1624273915">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.opened" value="2" />
@@ -111,7 +96,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -119,15 +104,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -693,7 +669,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536808387723" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536808390341" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -823,7 +799,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -834,7 +809,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4599018" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4599018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1034,6 +1009,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1041,13 +1023,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
