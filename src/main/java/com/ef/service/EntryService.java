@@ -8,5 +8,5 @@ import java.util.Map;
 
 public interface EntryService {
     Serializable create(Entry entry);
-    Map<Integer, String> findRequestsQuantityByIp(Date startDate, Date endingDate);
+    Map<String, Long> findRequestsThresholdExceedingIpAddresses(Date startDate, Date endingDate, Long threshold);
 }

@@ -23,11 +23,18 @@ public class HibernateConf {
     @Value("${spring.datasource.driverClassName}")
     private String driverClassName;
 
+    private final String PACKAGE_MODEL = "com.ef.model";
+    private final String DDL_AUTO_KEY = "hibernate.hbm2ddl.auto";
+    private final String DIALECT_KEY = "hibernate.dialect";
+    private final String CREATE_DROP_VALUE = "create-drop";
+    private final String DIALECT_MYSQL_VALUE = "org.hibernate.dialect.MySQL5Dialect";
+    private final String DIALECT_H2_VALUE = "org.hibernate.dialect.H2Dialect";
+
     @Bean
     @Primary
     public LocalSessionFactoryBean sessionFactoryBean() {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        sessionFactoryBean.setPackagesToScan("com.ef.model");
+        sessionFactoryBean.setPackagesToScan(PACKAGE_MODEL);
         sessionFactoryBean.setDataSource(dataSource());
         sessionFactoryBean.setHibernateProperties(hibernateProperties());
 
@@ -38,7 +45,7 @@ public class HibernateConf {
     @Profile({"dev"})
     public LocalSessionFactoryBean sessionFactoryBeanDev() {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        sessionFactoryBean.setPackagesToScan("com.ef.model");
+        sessionFactoryBean.setPackagesToScan(PACKAGE_MODEL);
         sessionFactoryBean.setDataSource(dataSourceDev());
         sessionFactoryBean.setHibernateProperties(hibernatePropertiesDev());
 
@@ -49,7 +56,6 @@ public class HibernateConf {
         DataSource dataSource = DataSourceBuilder.create()
                 .url(url)
                 .driverClassName(driverClassName)
-                //.type(org.apache.tomcat.jdbc.pool.DataSource.class)
                 .username(username)
                 .password(password)
                 .build();
@@ -71,8 +77,8 @@ public class HibernateConf {
     private final Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
 
-        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-        hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        hibernateProperties.setProperty(DDL_AUTO_KEY, CREATE_DROP_VALUE);
+        hibernateProperties.setProperty(DIALECT_KEY, DIALECT_MYSQL_VALUE);
 
         return hibernateProperties;
     }
@@ -80,8 +86,8 @@ public class HibernateConf {
     private final Properties hibernatePropertiesDev() {
         Properties hibernateProperties = new Properties();
 
-        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-        hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        hibernateProperties.setProperty(DDL_AUTO_KEY, CREATE_DROP_VALUE);
+        hibernateProperties.setProperty(DIALECT_KEY, DIALECT_H2_VALUE);
 
         return hibernateProperties;
     }

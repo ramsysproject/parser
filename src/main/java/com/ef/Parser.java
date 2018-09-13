@@ -1,6 +1,7 @@
 package com.ef;
 
-import com.ef.service.ParserService;
+import com.ef.constants.DurationEnum;
+import com.ef.processor.ProcessorService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,61 +9,59 @@ import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfig
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import java.io.File;
-import java.io.IOException;
 import java.text.ParseException;
-import java.util.Arrays;
-import java.util.Scanner;
 
 @ComponentScan({
         "com.ef.model",
         "com.ef.service",
+        "com.ef.processor",
         "com.ef.config"
 })
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = {JpaRepositoriesAutoConfiguration.class})
 public class Parser {
 
-    private static ParserService parserService;
+    private static ProcessorService processorService;
+    private static final String ARGUMENTS_ERROR = "Please input inputStartDate, duration and threshold parameters";
+    private static final String THRESHOLD_ERROR = "Threshold must be an Integer";
+    private static final String THRESHOLD_GREATER_THAN_ERROR = "Threshold my be greater than 0";
 
     public static void main(String[] args) throws ParseException {
         ApplicationContext applicationContext = SpringApplication.run(Parser.class);
 
-        //String inputStartDate = args[0];
-        //String duration = args[1];
-        //String threshold = args[2];
+        if(args.length < 2) throw new IllegalArgumentException(ARGUMENTS_ERROR);
+        String inputStartDate = args[0];
+        String duration = args[1];
+        String threshold = args[2];
 
-        String inputStartDate = "2017-01-01.13:00:00";
-        String duration = "hourly";
-        Integer threshold = 100;
+        String validStartDate = validateStartDateArgument(inputStartDate);
+        DurationEnum validDuration = validateDuration(duration);
+        Long validThreshold = validateThreshold(threshold);
 
-        parserService = applicationContext.getBean(ParserService.class);
-        Parser parser = new Parser();
-        parser.processFile("access.log");
-        parser.printConsumingIps(inputStartDate, duration, threshold);
+        processorService = applicationContext.getBean(ProcessorService.class);
+        processorService.processFile("access.log");
+        processorService.printConsumingIps(validStartDate, validDuration, validThreshold);
+        System.exit(0);
     }
 
-    private String processFile(String fileName) throws ParseException {
-        StringBuilder result = new StringBuilder("");
+    private static String validateStartDateArgument(String inputStartDate) {
+        return inputStartDate;
+    }
 
-        //Get file from resources folder
-        ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource(fileName).getFile());
+    private static DurationEnum validateDuration(String duration) {
+        return DurationEnum.findByName(duration);
+    }
 
-        try (Scanner scanner = new Scanner(file)) {
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                result.append(line).append("\n");
-                parserService.parseLine(line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+    private static Long validateThreshold(String inputThreshold) {
+        Long threshold = 0L;
+        try {
+            threshold = Long.parseLong(inputThreshold);
+        } catch (NumberFormatException ex) {
+            throw new IllegalArgumentException(THRESHOLD_ERROR);
         }
 
-        return result.toString();
-    }
+        if(threshold <= 0) throw new IllegalArgumentException(THRESHOLD_GREATER_THAN_ERROR);
 
-    private void printConsumingIps(String inputStartDate, String duration, Integer threshold) {
-        parserService.findConsumingIps(inputStartDate, duration, threshold);
+        return threshold;
     }
 }

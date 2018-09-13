@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Component
@@ -29,7 +31,19 @@ public class EntryServiceImpl implements EntryService {
     }
 
     @Override
-    public Map<Integer, String> findRequestsQuantityByIp(Date startDate, Date endingDate) {
-        return null;
+    public Map<String, Long> findRequestsThresholdExceedingIpAddresses(Date startDate, Date endingDate, Long threshold) {
+        Session session = hibernateFactory.getSession();
+
+        Map<String, Long> ipAddresses = new HashMap<>();
+        List<Object[]> entryList = session.createQuery("SELECT e.ipAddress, COUNT(*) FROM Entry e WHERE e.date BETWEEN :startDate AND :endingDate GROUP BY e.ipAddress HAVING COUNT(*) > :threshold ORDER BY COUNT(*) ASC")
+                .setParameter("startDate", startDate)
+                .setParameter("endingDate", endingDate)
+                .setParameter("threshold", threshold).list();
+
+        for(Object[] eachObject: entryList) {
+            ipAddresses.put(String.valueOf(eachObject[0]), Long.parseLong(eachObject[1].toString()));
+        }
+
+        return ipAddresses;
     }
 }
