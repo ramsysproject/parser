@@ -30,7 +30,7 @@ public class Parser {
     public static void main(String[] args) throws ParseException, IOException {
         ApplicationContext applicationContext = SpringApplication.run(Parser.class);
 
-        if(args.length < 2) throw new IllegalArgumentException(ARGUMENTS_ERROR);
+        if(args.length < 3) throw new IllegalArgumentException(ARGUMENTS_ERROR);
         String inputStartDate = args[0];
         String duration = args[1];
         String threshold = args[2];
@@ -40,7 +40,8 @@ public class Parser {
         Long validThreshold = validateThreshold(threshold);
 
         processorService = applicationContext.getBean(ProcessorService.class);
-        processorService.processFile("access.log");
+        if(args.length == 3) processorService.processCpFile("access.log");
+        else processorService.processDiskFile(args[3]);
         processorService.printConsumingIps(validStartDate, validDuration, validThreshold);
         System.exit(0);
     }

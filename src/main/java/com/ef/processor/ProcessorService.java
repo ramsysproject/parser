@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.text.ParseException;
 
 public interface ProcessorService {
-    Boolean processFile(String fileName) throws ParseException, IOException;
+    Boolean processCpFile(String fileName) throws ParseException, IOException;
+    Boolean processDiskFile(String fileName) throws ParseException, IOException;
     void printConsumingIps(String inputStartDate, DurationEnum duration, Long threshold);
 }
