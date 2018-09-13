@@ -27,7 +27,7 @@ public class ProcessorServiceImpl implements ProcessorService {
     EntryService entryService;
 
     @Override
-    public Boolean processFile(String fileName) throws ParseException, IOException {
+    public Boolean processCpFile(String fileName) throws ParseException, IOException {
         ClassPathResource classPathResource = new ClassPathResource(fileName);
         InputStream inputStream = classPathResource.getInputStream();
         File file = File.createTempFile("test", ".txt");
@@ -36,6 +36,22 @@ public class ProcessorServiceImpl implements ProcessorService {
         } finally {
             IOUtils.closeQuietly(inputStream);
         }
+
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                parseLine(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new IllegalArgumentException("File cannot be processed");
+        }
+
+        return Boolean.TRUE;
+    }
+
+    public Boolean processDiskFile(String filePath) throws ParseException, IOException {
+        File file = new File(filePath);
 
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
