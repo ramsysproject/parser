@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfig
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.io.IOException;
 import java.text.ParseException;
 
 @ComponentScan({
@@ -26,7 +27,7 @@ public class Parser {
     private static final String THRESHOLD_ERROR = "Threshold must be an Integer";
     private static final String THRESHOLD_GREATER_THAN_ERROR = "Threshold my be greater than 0";
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException, IOException {
         ApplicationContext applicationContext = SpringApplication.run(Parser.class);
 
         if(args.length < 2) throw new IllegalArgumentException(ARGUMENTS_ERROR);

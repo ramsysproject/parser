@@ -4,11 +4,15 @@ import com.ef.constants.DurationEnum;
 import com.ef.model.Entry;
 import com.ef.processor.ProcessorService;
 import com.ef.service.EntryService;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -23,10 +27,15 @@ public class ProcessorServiceImpl implements ProcessorService {
     EntryService entryService;
 
     @Override
-    public Boolean processFile(String fileName) throws ParseException {
-        //Get file from resources folder
-        ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource(fileName).getFile());
+    public Boolean processFile(String fileName) throws ParseException, IOException {
+        ClassPathResource classPathResource = new ClassPathResource(fileName);
+        InputStream inputStream = classPathResource.getInputStream();
+        File file = File.createTempFile("test", ".txt");
+        try {
+            FileUtils.copyInputStreamToFile(inputStream, file);
+        } finally {
+            IOUtils.closeQuietly(inputStream);
+        }
 
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
@@ -44,7 +53,10 @@ public class ProcessorServiceImpl implements ProcessorService {
     @Override
     public void printConsumingIps(String inputStartDate, DurationEnum duration, Long threshold) {
         Map<String, Long> ipAddresses = findConsumingIps(inputStartDate, duration, threshold);
-        ipAddresses.forEach((String ip, Long quantity) -> System.out.print("ViolatingIpAddress: "+ ip + " - RequestsQuantity: "+ quantity + "\n"));
+        System.out.println("\n\n############# Results #############");
+        System.out.println("ViolatingIpAddress ---- RequestsQuantity");
+        ipAddresses.forEach((String ip, Long quantity) -> System.out.print(ip + " ---- "+ quantity + "\n"));
+        System.out.println("############# End Results #############\n\n");
     }
 
     private Entry parseLine(String line) throws ParseException {
