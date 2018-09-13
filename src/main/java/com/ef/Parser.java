@@ -42,8 +42,7 @@ public class Parser {
         processorService = applicationContext.getBean(ProcessorService.class);
         if(args.length == 3) processorService.processCpFile("access.log");
         else processorService.processDiskFile(args[3]);
-        processorService.printConsumingIps(validStartDate, validDuration, validThreshold);
-        System.exit(0);
+        processorService.informRestrictedIpAddresses(validStartDate, validDuration, validThreshold);
     }
 
     private static String validateStartDateArgument(String inputStartDate) {

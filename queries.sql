@@ -5,3 +5,6 @@ SELECT e.ipAddress, COUNT(*) FROM parser.entry e WHERE e.date BETWEEN '2017-01-0
 
 ## Write MySQL query to find requests made by a given IP.
 SELECT * FROM parser.entry e WHERE e.ipAddress = "192.168.106.134";
+
+## Write MySQL query to find all restrictions
+SELECT * FROM parser.restriction;

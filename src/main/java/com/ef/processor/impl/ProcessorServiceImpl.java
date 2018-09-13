@@ -2,8 +2,10 @@ package com.ef.processor.impl;
 
 import com.ef.constants.DurationEnum;
 import com.ef.model.Entry;
+import com.ef.model.Restriction;
 import com.ef.processor.ProcessorService;
 import com.ef.service.EntryService;
+import com.ef.service.RestrictionService;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +25,19 @@ import java.util.Scanner;
 @Component
 public class ProcessorServiceImpl implements ProcessorService {
 
+    private EntryService entryService;
+    private RestrictionService restrictionService;
+
+    private final String RESTRICTED_MSG = "Surpassed %s requests in %s scheme beginning at %s - Executed %s requests";
+    private final String RESULTS_BEGIN = "\n\n############# Results #############";
+    private final String RESULTS_END = "############# End Results #############\n\n";
+    private final String RESULTS_HEADER = "ViolatingIpAddress ---- RequestsQuantity";
+
     @Autowired
-    EntryService entryService;
+    public ProcessorServiceImpl(EntryService entryService, RestrictionService restrictionService) {
+        this.entryService = entryService;
+        this.restrictionService = restrictionService;
+    }
 
     @Override
     public Boolean processCpFile(String fileName) throws ParseException, IOException {
@@ -67,19 +80,22 @@ public class ProcessorServiceImpl implements ProcessorService {
     }
 
     @Override
-    public void printConsumingIps(String inputStartDate, DurationEnum duration, Long threshold) {
+    public void informRestrictedIpAddresses(String inputStartDate, DurationEnum duration, Long threshold) {
         Map<String, Long> ipAddresses = findConsumingIps(inputStartDate, duration, threshold);
-        System.out.println("\n\n############# Results #############");
-        System.out.println("ViolatingIpAddress ---- RequestsQuantity");
-        ipAddresses.forEach((String ip, Long quantity) -> System.out.print(ip + " ---- "+ quantity + "\n"));
-        System.out.println("############# End Results #############\n\n");
+        System.out.println(RESULTS_BEGIN);
+        System.out.println(RESULTS_HEADER);
+        ipAddresses.forEach((String ip, Long quantity) -> {
+            System.out.print(ip + " ---- "+ quantity + "\n");
+            Restriction restriction = new Restriction.Builder().ipAddress(ip).motive(String.format(RESTRICTED_MSG, threshold, duration.getName(), inputStartDate, quantity)).build();
+            restrictionService.create(restriction);
+        });
+        System.out.println(RESULTS_END);
     }
 
     private Entry parseLine(String line) throws ParseException {
         String[] parts = line.split("\\|");
 
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-
         Entry entry = new Entry.Builder()
                 .date(format.parse(parts[0]))
                 .ipAddress(parts[1])
