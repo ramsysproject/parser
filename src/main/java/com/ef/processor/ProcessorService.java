@@ -8,5 +8,5 @@ import java.text.ParseException;
 public interface ProcessorService {
     Boolean processCpFile(String fileName) throws ParseException, IOException;
     Boolean processDiskFile(String fileName) throws ParseException, IOException;
-    void printConsumingIps(String inputStartDate, DurationEnum duration, Long threshold);
+    void informRestrictedIpAddresses(String inputStartDate, DurationEnum duration, Long threshold);
 }
