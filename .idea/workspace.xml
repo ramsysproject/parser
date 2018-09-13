@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="225bed74-b23c-4282-b55a-61012f7cd9bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/config/HibernateConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/config/HibernateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/model/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/service/EntryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/service/ParserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/service/impl/EntryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/emram/service/impl/ParserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/parser-1.0.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-1.0.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/parser-1.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-1.0.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/parser-boot-1.0.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/parser-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/parser-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/parser" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scripts/parser.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/parser.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/processor/ProcessorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/processor/ProcessorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -28,95 +29,79 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="parser" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1624273915">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="1" />
-          <entry key="java" value="18" />
-          <entry key="log" value="2" />
-          <entry key="properties" value="4" />
+          <entry key="gradle" value="4" />
+          <entry key="java" value="60" />
+          <entry key="log" value="3" />
+          <entry key="properties" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="18" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="4" />
+          <entry key="Groovy" value="4" />
+          <entry key="JAVA" value="60" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Properties" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="24" />
-          <entry key="java" value="2592" />
-          <entry key="properties" value="181" />
-          <entry key="txt" value="3" />
+          <entry key="dummy" value="14" />
+          <entry key="gradle" value="97" />
+          <entry key="java" value="6278" />
+          <entry key="properties" value="374" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="24" />
-          <entry key="JAVA" value="2591" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="181" />
+          <entry key="Groovy" value="97" />
+          <entry key="JAVA" value="6277" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Properties" value="374" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/config/HibernateConf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/Application.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/service/impl/ParserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/service/impl/EntryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -127,9 +112,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>emram</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,7 +128,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\emaramirez1306\.gradle\wrapper\dists\gradle-4.8-bin\divx0s2uj4thofgytb7gf9fsi\gradle-4.8" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\emaramirez1306\.gradle\wrapper\dists\gradle-4.8-all\41c9mvq2w0645xx6nsenaerjl\gradle-4.8" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -171,34 +162,24 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'parser'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'parser'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
+                <option name="description" value="Installs the project as a distribution as-is." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
+                <option name="name" value="installBootDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'parser'. [incubating]" />
+                <option name="description" value="Assembles the boot distributions" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
+                <option name="name" value="assembleBootDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'parser'." />
+                <option name="description" value="Runs this project as a JVM application" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
+                <option name="name" value="run" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files." />
@@ -206,14 +187,9 @@
                 <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
+                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
+                <option name="name" value="startScripts" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
@@ -241,6 +217,11 @@
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Assembles the main distributions" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDist" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="init" />
@@ -256,24 +237,104 @@
                 <option name="name" value="dependencyManagement" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a Spring Boot application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="bootRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'parser'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'parser'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootDistZip" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootDistTar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distTar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distZip" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'parser'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates OS-specific start scripts to run the project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootStartScripts" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'parser'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'parser'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the project as a distribution as-is." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDist" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'parser'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
@@ -291,16 +352,6 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'parser'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="help" />
@@ -309,11 +360,6 @@
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'parser'." />
@@ -327,9 +373,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6146854318479" />
+        <entry key="$PROJECT_DIR$" value="6146940036122" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="4047739823" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2422847265" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1235593611" />
       </map>
@@ -532,17 +578,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/service/ParserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/service/EntryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/config/HibernateFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/emram/config/HibernateConf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/service/impl/EntryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/model/Entry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/service/impl/ParserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/emram/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/emram/config/HibernateConf.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/model/Entry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/service/EntryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/constants/DurationEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/service/ParserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/service/impl/ParserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/service/impl/EntryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/processor/ProcessorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/config/HibernateConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -557,8 +613,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -590,7 +645,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="emram" type="462c0819:PsiDirectoryNode" />
+              <item name="ef" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parser" type="b2602c69:ProjectViewProjectNode" />
@@ -598,8 +653,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="emram" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="ef" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parser" type="b2602c69:ProjectViewProjectNode" />
@@ -607,17 +662,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="emram" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="emram" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="ef" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -631,11 +677,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536721662124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536803975851" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -653,14 +700,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application Dev">
+  <component name="RunManager" selected="Gradle.build">
     <configuration name="Application Dev" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.emram.Application" />
+      <option name="MAIN_CLASS_NAME" value="com.ef.Parser" />
       <module name="parser_main" />
+      <option name="PROGRAM_PARAMETERS" value="2017-01-01.00:00:00 daily 500" />
       <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.emram.*" />
+          <option name="PATTERN" value="com.ef.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -668,18 +716,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emram.Application" />
+    <configuration name="Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ef.Parser" />
       <module name="parser_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.emram.*" />
+          <option name="PATTERN" value="com.ef.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="parser [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
     </configuration>
     <configuration name="run" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -701,12 +785,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Application Dev" />
+      <item itemvalue="Gradle.build" />
       <item itemvalue="Gradle.run" />
-      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Parser" />
+      <item itemvalue="Gradle.parser [bootJar]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Gradle.parser [bootJar]" />
+        <item itemvalue="Application.Parser" />
       </list>
     </recent_temporary>
   </component>
@@ -727,58 +814,53 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4599018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>calendar.getTime()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.4.RELEASE/517e0283c6ea0be630d991a4ab832c2094a7a80f/spring-boot-autoconfigure-2.0.4.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/access.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -789,117 +871,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/config/HibernateFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/service/ParserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/service/EntryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/access.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/service/impl/ProcessorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="886">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="67" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/model/Entry.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/config/HibernateConf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+        <state relative-caret-position="1455">
+          <caret line="89" column="69" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#2455#2456#0" expanded="true" />
-            <element signature="e#2488#2489#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/config/HibernateFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/constants/DurationEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/model/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/service/EntryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/service/impl/EntryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Programas instalados/Java/JDK8/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="1092" column="33" lean-forward="true" selection-start-line="1092" selection-start-column="33" selection-end-line="1092" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.32/542325872693cc57f59f65138da82b5eee5099f7/tomcat-embed-core-8.5.32-sources.jar!/org/apache/tomcat/util/http/fileupload/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/processor/ProcessorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ef/processor/impl/ProcessorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="57" column="86" selection-start-line="57" selection-start-column="86" selection-end-line="57" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/service/impl/ParserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/service/impl/EntryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/config/HibernateConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emram/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
