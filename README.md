@@ -1,7 +1,7 @@
 # parser
 **Web Server Access Log Parser**
 
-This application reads a Web Server logs, parses and persists entries into a Database. At this moment it´s working with an H2 Database for dev purposes and MySQL connector for Prod.
+This application reads a Web Server logs, parses and persists entries into a Database. At this moment it´s working with an H2 Database for dev purposes and MySQL connector for Prod. It is a CLI Interface application that displays the result in console, indicating which ip addresses have surpassed a given request threshold for a period of time. That information is also stored in the DB as a restriction row.
 
 The application by default runs in port 8090. There are several ways to execute it:
 
